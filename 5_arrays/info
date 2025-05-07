@@ -1,0 +1,84 @@
+tipos de array 
+
+Array indexado: 
+El array indexado es el tipo más básico de array en PHP, donde los elementos se almacenan en posiciones numéricas secuenciales, comenzando desde 0.
+
+$array = array(
+    "elemento1", 
+    "elemento2", 
+    "elemento3");
+
+Array asociativo:
+ En un array asociativo, los elementos se almacenan en pares clave-valor. Puedes acceder a los elementos utilizando la clave en lugar del índice numérico.
+
+$array = array(
+    "nombre" => "Juan", 
+    "edad" => 25, 
+    "ciudad" => "Madrid");
+
+Array multidimensional: 
+Un array multidimensional es aquel que contiene otros arrays como elementos. Puedes crear estructuras de datos más complejas utilizando matrices dentro de matrices.
+
+$array = array( 
+    array("manzana", "naranja", "plátano"), 
+    array("rojo", "naranja", "amarillo"), 
+    array("Fruta", "Color", "Forma") );
+
+Array con clave numérica personalizada: 
+Puedes asignar claves numéricas personalizadas a tus elementos en un array indexado utilizando corchetes y el operador =>.
+
+$array = array(
+    2 => "elemento1", 
+    5 => "elemento2", 
+    9 => "elemento3");
+
+Array con valores mixtos: 
+PHP te permite tener un array con elementos de diferentes tipos de datos, incluyendo cadenas, números, booleanos y otros arrays.
+
+$array = array("texto", 123, true, array("manzana", "naranja"));
+
+Array de objetos:
+Un array de objetos es un tipo de array que almacena objetos en lugar de valores simples.
+
+class Auto {
+    public $marca;
+    public $modelo;
+
+    public function __construct($marca, $modelo) {
+        $this->marca = $marca;
+        $this->modelo = $modelo;
+    }
+    piblic function mostrarINFO() {
+        return "Marca: ". $this->marca. ", Modelo: ". $this->modelo.;
+    }
+}
+$autos = array(
+    new Auto("toyota", "corolla"),
+    new Auto("ford", "focus")
+    );
+foreach ($autos as $auto) {
+    echo $auto->mostrarINFO()."\n";
+}
+
+Array vacio :
+
+$array = array();
+
+------------------------
+
+** imprimir el array 
+print_r();
+
+**muestra el tipo de dato que es la variable 
+$numero=1;
+var_dump($numero); // (int)$numero
+
+
+** convertir array en cadena de texto separandolos por separador ","
+$array = array("manzana", "naranja", "plátano");
+$cadena = implode(",", $array)
+echo $cadena; // manzana, naranja, plátano //sin comillas
+
+**foreach
+muestra la informacion del array 
+

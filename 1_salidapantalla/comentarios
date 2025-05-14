@@ -1,0 +1,10 @@
+<?php
+
+// Esto es un comentario de una sola línea
+
+
+/* Esto es un comentario multilínea
+    y otra lína de comentarios */
+
+
+# Esto es un comentario al estilo de consola de una sola línea
